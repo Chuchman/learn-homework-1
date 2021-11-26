@@ -15,13 +15,17 @@
     
 """
 
-questions_and_answers = {}
+questions_and_answers = {"How are you?": "Fine", "What are you doing?": "Coding"}
 
-def ask_user(answers_dict):
-    """
-    Замените pass на ваш код
-    """
-    pass
+def ask_user(answer_dict):
+  while True:
+    quest = input("Enter the question")
+    if answer_dict.get(quest):
+      print(answer_dict[quest])
+      break
+
+
+
     
 if __name__ == "__main__":
     ask_user(questions_and_answers)
